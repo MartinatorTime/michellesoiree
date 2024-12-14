@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
+   Underwear Boutique
+  </title>
+<!-- Bootstrap CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+<meta content="noindex, nofollow" name="robots"/>
+<meta content="noindex, nofollow" name="robots"/></head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#" rel="nofollow noindex">
+    Underwear Boutique
+   </a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon">
+</span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item active">
+<a class="nav-link" href="#" rel="nofollow noindex">
+       Home
+      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#" rel="nofollow noindex">
+       Shop
+      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#" rel="nofollow noindex">
+       About Us
+      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#" rel="nofollow noindex">
+       Contact
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="hero bg-primary text-white text-center py-5">
+<div class="container">
+<h1>
+     Discover Comfort &amp; Style
+    </h1>
+<p>
+     Your ultimate destination for premium underwear.
+    </p>
+<a class="btn btn-light btn-lg" href="#shop" rel="nofollow noindex">
+     Shop Now
+    </a>
+</div>
+</header>
+<!-- Product Showcase Section -->
+<section class="py-5" id="shop">
+<div class="container">
+<h2 class="text-center mb-4">
+     Featured Products
+    </h2>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<img alt="Product 1" class="card-img-top" src="https://via.placeholder.com/300x200"/>
+<div class="card-body">
+<h5 class="card-title">
+         Comfort Briefs
+        </h5>
+<p class="card-text">
+         $19.99
+        </p>
+<button class="btn btn-primary add-to-cart">
+         Add to Cart
+        </button>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<img alt="Product 2" class="card-img-top" src="https://via.placeholder.com/300x200"/>
+<div class="card-body">
+<h5 class="card-title">
+         Silk Boxers
+        </h5>
+<p class="card-text">
+         $24.99
+        </p>
+<button class="btn btn-primary add-to-cart">
+         Add to Cart
+        </button>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<img alt="Product 3" class="card-img-top" src="https://via.placeholder.com/300x200"/>
+<div class="card-body">
+<h5 class="card-title">
+         Lace Thongs
+        </h5>
+<p class="card-text">
+         $14.99
+        </p>
+<button class="btn btn-primary add-to-cart">
+         Add to Cart
+        </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-5 bg-light" id="contact">
+<div class="container">
+<h2 class="text-center mb-4">
+     Get in Touch
+    </h2>
+<form id="contactForm">
+<div class="form-group">
+<label for="name">
+       Name:
+      </label>
+<input class="form-control" id="name" name="name" placeholder="Enter your name" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="email">
+       Email:
+      </label>
+<input class="form-control" id="email" name="email" placeholder="Enter your email" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="message">
+       Message:
+      </label>
+<textarea class="form-control" id="message" name="message" placeholder="Your message" required=""></textarea>
+</div>
+<button class="btn btn-primary" type="submit">
+      Send Message
+     </button>
+</form>
+</div>
+</section>
+<!-- Footer -->
+<footer class="text-center py-4">
+<p>
+    © 2023 Underwear Boutique. All rights reserved.
+   </p>
+</footer>
+<!-- Bootstrap & jQuery JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+</script>
+</body>
+</html>
+
+
+<style>
+    body {
+    font-family: 'Arial', sans-serif;
+}
+
+.hero {
+    background-image: url('https://via.placeholder.com/1920x600');
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #f8f9fa;
+}
+</style>
+
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+<script>
+    (function() {
+        window.onload = function() {
+            parent.iframeLoaded();
+        }
+    })();
+    try {
+    $(document).ready(function() {
+    $('.add-to-cart').click(function() {
+        alert('Item added to cart!');
+    });
+
+    $('#contactForm').submit(function(e) {
+        e.preventDefault();
+        alert('Thank you for your message! We will get back to you soon.');
+        $(this).trigger("reset");
+    });
+});
+    } catch (e) {
+        console.log("Error in JS code", e);
+    }
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</html>
+    
