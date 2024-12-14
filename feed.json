@@ -1,0 +1,13 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "MichelleSoiree",
+    "description": "",
+    "home_page_url": "https://michellesoiree.us.kg",
+    "feed_url": "https://michellesoiree.us.kg/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Martins Reinvalds"
+    },
+    "items": [
+    ]
+}
